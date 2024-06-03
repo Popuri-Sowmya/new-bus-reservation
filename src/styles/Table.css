@@ -1,0 +1,19 @@
+.table-responsive {
+    max-height: 75vh;
+    max-width: 77vw;
+    overflow-x: auto;
+    overflow-y: auto;
+    background-color: white;
+    margin-top: 0px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.operator-interface {
+    background-color: #f0f8ff;
+    background-position: cover;
+    position: static;
+    /* background-color:#cccccc; */
+    max-height: 81vh;
+    text-align: center;
+}

@@ -1,0 +1,29 @@
+/* Custom styling for the auto-suggestion dropdown */
+.custom-datalist {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 4px;
+  width: 100%;
+  position: absolute;
+  z-index: 999;
+  background-color: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom styling for the options in the auto-suggestion dropdown */
+.custom-datalist option {
+  padding: 6px;
+}
+
+/* Custom styling to highlight the hovered option in the auto-suggestion dropdown */
+.custom-datalist option:hover {
+  background-color: #f0f0f0;
+}
+
+#fromList{
+  font-size: 16px;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  padding: 5px;
+}

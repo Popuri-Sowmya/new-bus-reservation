@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+.register {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 110vh;
+    background-color: rgb(56, 127, 198);
+}
+
+
+.sectionfalse,
+.sectionsuccess {
+    width: 100%;
+    max-width: 420px;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.registerform {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    padding-bottom: 1rem;
+}
+
+.a1,
+.a2,
+.a1:visited,
+.a2:visited {
+    color: #fff;
+}
+
+#usernameRegister,
+#password1,
+#confirm_pwd,
+#emailRegister,
+#mobileNumberRegister,
+.submitRegister {
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+}
+
+label,
+button {
+    margin-top: 1rem;
+}
+
+button {
+    padding: 0.5rem;
+}
+
+.instructions {
+    font-size: 0.75rem;
+    border-radius: 0.5rem;
+    background: #000;
+    color: #fff;
+    padding: 0.25rem;
+    position: relative;
+    bottom: -10px;
+}
+
+.instructions>svg {
+    margin-right: 0.25rem;
+}
+
+.offscreen {
+    position: absolute;
+    left: -9999px;
+}
+
+.hide {
+    display: none;
+}
+
+.valid {
+    color: limegreen;
+    margin-left: 0.25rem;
+}
+
+.invalid {
+    color: red;
+    margin-left: 0.25rem;
+}
+
+.errmsg {
+    background-color: lightpink;
+    color: firebrick;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.line {
+    display: inline-block;
+}
+
+.image-container {
+    position: absolute;
+    height: 120vh;
+    right: 0px;
+    top: 96px;
+    bottom: 0;
+    left: 410px;
+    /* Adjust the position of the image container */
+    width: 72.2vw;
+}
+
+.registration-image {
+    width: 100%;
+    /* Make the image fill the container */
+    height: 100%;
+    border-radius: 0.5rem;
+    top: 0;
+    bottom: 0;
+
+}

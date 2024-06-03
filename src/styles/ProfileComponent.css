@@ -1,0 +1,104 @@
+.operator-interface {
+    display: flex;
+    position:static;
+}
+
+.sidebar {
+    width: 330px;
+    background-color: #daf1f0;
+    padding: 10px;
+    position:static;
+    bottom: 0;
+    height:200vh;
+    
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    position: relative;
+}
+
+.sidebar div {
+    cursor: pointer;
+    border: 1px solid transparent; /* Add border to options */
+    padding: 5px;
+}
+
+.sidebar div:hover {
+    border-color: #ccc; /* Change border color on hover */
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #1B8AF1;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    width:300px;
+    border: none;
+    margin-left:0;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1B8AF1;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }w
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3B71CA;}
+
+  .table-container {
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: auto;
+}
+
+.table {
+    margin-left: 0px; /* Adjust as needed */
+    overflow-y: auto;
+}
+
+.headbtn{
+  background-color: #43bdf1;
+  border-radius: 8px;
+  /* border-color: #43bdf1; */
+  font-size: 20px;
+  color: white;
+  width: 100%;
+  border: 1px #43bdf1
+}
+
+.headbtn:hover{
+  color: #43bdf1;
+  background-color: white;
+}

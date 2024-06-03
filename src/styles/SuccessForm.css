@@ -1,0 +1,39 @@
+.icon-container {
+    position: relative;
+    display: inline-block;
+}
+
+.ticket-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgb(58, 145, 246);
+}
+
+.icon-details {
+    padding-left: 60px;
+    text-align: left;
+}
+
+.booking-card {
+    margin-top: 80px;
+    width: 700px;
+    height: 300px;
+    align-items: center;
+    background-color: #e7f3f6;
+    margin-bottom: 70px;
+    float: left;
+    margin-left: 50px;
+}
+
+.tpassenger{
+    width: 100px;
+}
+
+.detailsdiv{
+    width: 700px;
+}
+
+/* .detailstable{
+    
+} */

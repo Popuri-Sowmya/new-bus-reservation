@@ -1,0 +1,32 @@
+.filter-container {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    height:550px;
+    margin-top:50px;
+    text-align:left;
+    width:285px;
+    background-color: azure;
+}
+
+.filter-item {
+    margin-bottom: 10px;
+}
+
+.price-range-scrollbar {
+    width: 100%;
+    overflow-x: auto;
+    /* Enable horizontal scrollbar */
+    display: flex;
+    
+}
+
+.price-range-scrollbar input {
+    flex: 1;
+    margin: 0 5px;
+    
+}
+
+.price-range-scrollbar div {
+    text-align: center;
+}

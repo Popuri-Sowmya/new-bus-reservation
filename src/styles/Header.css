@@ -1,0 +1,29 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f3f6;
+    color: #fff;
+    /* Custom CSS for Navbar */
+    margin-right: auto;
+    margin-left: auto;
+    /* Pushes the logo to the right */
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+.headernav {
+    display: inline-block;
+    height: 40px;
+    color: rgb(0, 2, 0);
+}
+
+.headernav:hover {
+    background-color: #286fe3;
+    color: #fff;
+}

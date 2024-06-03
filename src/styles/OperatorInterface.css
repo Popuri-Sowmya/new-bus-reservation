@@ -1,0 +1,124 @@
+.operator-interface {
+    display: flex;
+    position:static;
+}
+
+.sidebar {
+    width: 330px;
+    background-color: #43bdf1;
+    padding: 10px;
+    position:static;
+    bottom: 0;
+    height:100vh;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    position: relative;
+}
+
+.sidebar div {
+    cursor: pointer;
+    border: 1px solid transparent; 
+    padding: 5px;
+}
+
+.sidebar div:hover {
+    border-color: #ccc;
+}
+
+
+.dropbtn {
+    background-color: #49a2f5;
+    color: rgb(255, 255, 255);
+    padding: 8px;
+    font-size: 16px;
+    width:300px;
+    border: none;
+    margin-left:0;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }w
+  
+  .dropdown-content a:hover {background-color: #c9eaee;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #3B71CA;}
+
+  .table-container {
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: auto;
+}
+
+.table {
+    margin-left: 0px; 
+    overflow-y: auto;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block; 
+}
+
+.dropdown-content a:hover {
+  background-color: #b6d9f4; 
+  color: #333; 
+}
+
+.rolecontent {
+  display: flex;
+  height: 100vh;
+  max-width: 77vw;
+}
+
+.headbtn{
+  background-color: #43bdf1;
+  border-radius: 8px;
+  /* border-color: #43bdf1; */
+  font-size: 20px;
+  color: white;
+  width: 100%;
+  border: 1px #43bdf1
+}
+
+.headbtn:hover{
+  color: #43bdf1;
+  background-color: white;
+}
+
+.listbtn{
+  background-color: #43bdf1;
+  border-radius: 12px;
+  color: white;
+  border: 1px #43bdf1;
+  width: 50%;
+}
+
+.listbtn:hover{
+  color: #43bdf1;
+  background-color: white;
+}

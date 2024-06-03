@@ -1,0 +1,55 @@
+{
+  "name": "busreservation",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.16.5",
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-brands-svg-icons": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@lottiefiles/lottie-player": "^2.0.3",
+    "@lottiefiles/react-lottie-player": "^3.5.3",
+    "@reduxjs/toolkit": "^2.2.1",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.6.7",
+    "bootstrap": "^5.3.3",
+    "framer-motion": "^11.0.8",
+    "jquery": "^3.7.1",
+    "popper.js": "^1.16.1",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.10.1",
+    "react-dom": "^18.2.0",
+    "react-native": "^0.73.5",
+    "react-redux": "^9.1.0",
+    "react-router-dom": "^6.22.2",
+    "react-scripts": "5.0.1",
+    "redux": "^5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/bootstrap": "^5.2.10",
+    "@types/jquery": "^3.5.29",
+    "@types/popper.js": "^1.11.0"
+  }
+}

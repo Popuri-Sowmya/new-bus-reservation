@@ -1,0 +1,60 @@
+.bus-container {
+    margin: 20px;
+}
+
+.bus-list {
+    display: flex;
+    /* Use flexbox for horizontal layout */
+    flex-wrap: wrap;
+    /* Wrap items to the next line when necessary */
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+.bus-item {
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 300px;
+    width: 1200px;
+    /* Adjust the width of each bus item */
+    background-color: rgb(235, 249, 252);
+}
+
+.bus-item h3 {
+    margin-top: 0;
+}
+
+.no-bus {
+    font-weight: bold;
+    color: red;
+}
+
+.row {
+    display: flex;
+}
+
+.col {
+    flex: 1;
+    /* Distribute available space equally among the child elements */
+    margin: 5px;
+    /* Add some margin for spacing between columns */
+}
+
+.no-border {
+    border-collapse: collapse;
+}
+
+.no-border td,
+.no-border th {
+    border: none;
+}
+
+.filter-section {
+    flex: 1;
+    padding-right: 20px;
+    float: left;
+    /* Align to the left */
+}

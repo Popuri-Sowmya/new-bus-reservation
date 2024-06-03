@@ -1,0 +1,27 @@
+.container-add{
+    position:relative;
+    margin-left:300px;
+    width:500px;
+   height:30px;
+   top:20px;
+   background-color:rgb(130, 90, 37);
+   
+}
+
+.form-group {
+    margin-bottom: 5px;
+    ; /* Adjust the margin between form groups */
+}
+.label-width {
+    width: 460px; /* Adjust as needed */
+}
+
+.btn-block {
+    display: block;
+    width: 90%; /* Make buttons and links full width */
+}
+
+.btn-danger {
+    margin-top: 14px; /* Remove default top margin */
+    margin-left: 10px; /* Add margin between buttons */
+}
