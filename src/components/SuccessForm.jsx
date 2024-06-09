@@ -1,20 +1,60 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { Table, Container, Row, Col, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTicketAlt, faCircleCheck } from '@fortawesome/free-solid-svg-icons';
+import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
+import { TicketPdf, generatePdf } from './TicketPdf';
+import { PDFDownloadLink } from '@react-pdf/renderer';
 
 const SuccessForm = () => {
   const { source, destination, date } = useSelector(state => state.search);
   const selectedBus = useSelector((state) => state.bus.selectedBus);
   const selectedSeats = useSelector((state) => state.bus.selectedSeats);
   const names = useSelector((state) => state.seatSelection.names);
+  const user = useSelector((state) => state.auth.user);
   const navigate = useNavigate();
 
   const handlePage = () => {
     navigate("/");
   };
+
+  useEffect(() => {
+    const sendEmail = async () => {
+      const pdfBlob = await generatePdf({ source, destination, date, selectedBus, selectedSeats, names });
+      const formData = new FormData();
+      const recipientEmail = user.email;
+      console.log(recipientEmail)
+      console.log(pdfBlob)
+      formData.append('pdf', pdfBlob, 'ticket.pdf');
+      formData.append('recipientEmail', recipientEmail);
+      for (let pair of formData.entries()) {
+        console.log(pair[0]+ ', ' + pair[1]); 
+      }
+      axios.post('http://localhost:8095/api/send-email', formData, {
+        headers: {
+          'Content-Type': 'multipart/form-data'
+        }
+      })
+      .then(response => {
+        console.log('Email sent successfully:', response.data);
+      })
+      .catch(error => {
+        console.error('Error sending email:', error);
+      });
+    };
+
+    sendEmail();
+  }, [source, destination, date, selectedBus, selectedSeats, names]);
+
+  console.log("Rendering SuccessForm");
+  console.log("Source:", source);
+  console.log("Destination:", destination);
+  console.log("Date:", date);
+  console.log("Selected Bus:", selectedBus);
+  console.log("Selected Seats:", selectedSeats);
+  console.log("Names:", names);
 
   return (
     <Container style={{ padding: '50px', textAlign: 'center', backgroundColor: "white" }}>
@@ -59,6 +99,14 @@ const SuccessForm = () => {
           <Button type='primary' onClick={handlePage} style={{ backgroundColor: '#03A9F4', borderColor: '#03A9F4' }}>Go back to main page</Button>
         </Col>
       </Row>
+      {console.log("rendering perfectly til pdfdownloadlink")}
+      <TicketPdf
+        source={source}
+        destination={destination}
+        date={date}
+        selectedBus={selectedBus}
+        selectedSeats={selectedSeats}
+        names={names}/>
     </Container>
   );
 };
